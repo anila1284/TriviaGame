@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trivia Game</title>    
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+      <!-- Added link to the jQuery Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Added a link to Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</head>
+
+<body>
+    <div id="mainBackground">
+    <div class="quizDiv">           
+            <h1>Trivia Game</h1>            
+        <p>You have 60 seconds to answer 10 questions</p>
+        <br />
+            <p>Click To Start</p>
+            <button type="button" id="startBtn" class="btn btn-primary black-background white">Start</button>
+        </div>
+    </div>
+
+    <div id="answerScreen">
+    <div class="quizDiv2">
+    <h2>All Done!</h2>
+            <hr />
+        <p id="correctScreen">Correct Answers: </p>
+        <p id="wrongScreen">Wrong Answers: </p>
+        </div>
+    </div>
+
+
+<div id="timesUp">
+        <div class="wrongAnswersDiv">
+            <h2 class="up">Times Up!</h2>
+        <hr />
+        <p>Score</p>
+            <p id="correctTimesUp">Correct Answers: </p>
+            <p id="wrongTimesUp">Wrong Answers: </p>
+        </div>
+</div>
+
+    <div class="container">
+        <header>Nike Trivia!</header>
+        <div class="row timeRemain">Time Remaining:
+            <div id="time-remain">60</div>
+        </div>
+
+        <div class="questions">
+            <button type="button" class="btn btn-primary black-background white" id="submitButton">Submit</button>
+            
+        </div>
+
+        
+    </div>
+    <script src="assets/javascript/game.js "></script>
+</body>
+
+</html>
